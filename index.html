@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: solid 3px yellow;
+      }
+      /* .highlight {
+        background-color: red;
+      } */
+      .main {
+        display: flex;
+        justify-content: space-around;
+      }
+    </style>
+    <script src="tooltip.js"></script>
+    <script></script>
+  </head>
+  <body class="main">
+    <p>
+      <gd-tooltip
+        class="highlight"
+        text="
+      p1 details"
+        >Project 1</gd-tooltip
+      >
+    </p>
+    <p>
+      <gd-tooltip
+        text="
+      p2 details"
+        >Project 2</gd-tooltip
+      >
+    </p>
+    <p>
+      <gd-tooltip
+        text="
+        p3 details"
+        >Project 3
+      </gd-tooltip>
+      <!-- <a is="gd-confirm-link" href="https://www.google.com">Google</a> -->
+    </p>
+
+    <!-- <div>light dom</div> -->
+  </body>
+</html>
