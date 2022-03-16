@@ -11,7 +11,7 @@ class Tooltip extends HTMLElement {
       background-color: black;
       color: white;
       position: absolute;
-      top:50px;
+      top:220px;
       z-index:10;
       width:20vw;
       height:20vh;
@@ -22,25 +22,27 @@ class Tooltip extends HTMLElement {
       justify-content: center;
       flex-direction:column;
       align-items:center;
-      background-color: grey;
-      min-width: 20vw;
+      background-image: url('/assets/RubrikCube_ClueIN_Black.jpg');
+      background-size: 100% auto;
+      width:20vw;
+      height:18vh;
    }
-      span {
-        background: blue;
-        border-radius: 50%;
+      button {
+        border-radius: 4px;
         padding: 0.15rem 0.5rem;
         font-size: larger;
-        width:6%;
+        // width:6%;
       }
     </style>
+    
     <slot>default</slot>
-    <span>?</span>`;
+    <button>More</button>`;
   }
   connectedCallback() {
     if (this.hasAttribute("text")) {
       this._tooltipText = this.getAttribute("text");
     }
-    const tooltipIcon = this.shadowRoot.querySelector("span");
+    const tooltipIcon = this.shadowRoot.querySelector("button");
     tooltipIcon.addEventListener("mouseenter", this._showToolTip.bind(this));
     tooltipIcon.addEventListener("mouseleave", this._hideToolTip.bind(this));
     this.shadowRoot.appendChild(tooltipIcon);
