@@ -11,7 +11,7 @@ class Tooltip extends HTMLElement {
       background-color: black;
       color: white;
       position: absolute;
-      top:220px;
+      // top:120px;
       z-index:10;
       width:20vw;
       height:20vh;
@@ -19,11 +19,12 @@ class Tooltip extends HTMLElement {
     }
     :host {
       display:flex;
-      justify-content: center;
+      justify-content: flex-end;
       flex-direction:column;
       align-items:center;
       width:20vw;
-      height:38vh;
+      height:auto;
+      border: solid 3px white;
    }
       button {
         border-radius: 4px;
@@ -32,8 +33,9 @@ class Tooltip extends HTMLElement {
       }
     </style>
     
-    <slot>default</slot>
-    <button>More</button>`;
+    <slot></slot>
+     <button>More</button>
+     `;
   }
   connectedCallback() {
     if (this.hasAttribute("text")) {
