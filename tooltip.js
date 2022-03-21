@@ -22,16 +22,13 @@ class Tooltip extends HTMLElement {
       justify-content: center;
       flex-direction:column;
       align-items:center;
-      background-image: url('/assets/RubrikCube_ClueIN_Black.jpg');
-      background-size: 100% auto;
       width:20vw;
-      height:18vh;
+      height:38vh;
    }
       button {
         border-radius: 4px;
         padding: 0.15rem 0.5rem;
         font-size: larger;
-        // width:6%;
       }
     </style>
     

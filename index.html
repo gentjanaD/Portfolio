@@ -6,9 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      div {
-        border: solid 3px yellow;
+      .p1 {
+        background-image: url("/assets/RubrikCube_ClueIN_Black.jpg");
+        background-size: 100% auto;
       }
+      .p2 {
+        background-image: url("/assets/magis.png");
+        background-size: 100% auto;
+      }
+      .p3 {
+        background-image: url("/assets/mag.png");
+        background-size: 100% auto;
+      }
+
       p {
         color: white;
       }
@@ -20,29 +30,28 @@
     <script src="tooltip.js"></script>
   </head>
   <body class="main">
-    <p>
+    <div class="p1">
       <gd-tooltip
-        class="highlight"
         text="
       p1 details"
         >Project 1</gd-tooltip
       >
-    </p>
-    <p>
+    </div>
+    <div class="p2">
       <gd-tooltip
         text="
       p2 details"
         >Project 2</gd-tooltip
       >
-    </p>
-    <p>
+    </div>
+    <div class="p3">
       <gd-tooltip
         text="
         p3 details"
         >Project 3
       </gd-tooltip>
       <!-- <a is="gd-confirm-link" href="https://www.google.com">Google</a> -->
-    </p>
+    </div>
 
     <!-- <div>light dom</div> -->
   </body>
