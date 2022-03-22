@@ -25,23 +25,25 @@ class Tooltip extends HTMLElement {
       border: solid 3px white;
       min-height: 29vh;
    }
-   :host-context(div.p1) {
-     background-image: url("/assets/RubrikCube_ClueIN_Black.jpg");
-    background-size: 115%;
-   }
-   :host-context(div.p2) {
-     background-image: url("/assets/magis.png");
-    background-size: 120%;
-   }
-   :host-context(div.p3) {
-     background-image: url("/assets/mag.png");
-    background-size: 100%;
-   }
-      button {
-        border-radius: 4px;
-        padding: 0.15rem 0.5rem;
-        font-size: larger;
-      }
+
+    :host-context(div.p1) {
+      background-image: url("/assets/RubrikCube_ClueIN_Black.jpg");
+      background-size: 115%;
+      border: var(--border-color, solid 3px red)
+    }
+    :host-context(div.p2) {
+      background-image: url("/assets/magis.png");
+      background-size: 120%;
+    }
+    :host-context(div.p3) {
+      background-image: url("/assets/mag.png");
+      background-size: 100%;
+    }
+    button {
+      border-radius: 4px;
+      padding: 0.15rem 0.5rem;
+      font-size: larger;
+    }
     </style>
     
     <slot></slot>
