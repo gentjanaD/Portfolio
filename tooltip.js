@@ -11,7 +11,6 @@ class Tooltip extends HTMLElement {
       background-color: black;
       color: white;
       position: absolute;
-      // top:120px;
       z-index:10;
       width:20vw;
       height:20vh;
@@ -23,8 +22,20 @@ class Tooltip extends HTMLElement {
       flex-direction:column;
       align-items:center;
       width:20vw;
-      height:auto;
       border: solid 3px white;
+      min-height: 29vh;
+   }
+   :host-context(div.p1) {
+     background-image: url("/assets/RubrikCube_ClueIN_Black.jpg");
+    background-size: 115%;
+   }
+   :host-context(div.p2) {
+     background-image: url("/assets/magis.png");
+    background-size: 120%;
+   }
+   :host-context(div.p3) {
+     background-image: url("/assets/mag.png");
+    background-size: 100%;
    }
       button {
         border-radius: 4px;
